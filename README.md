@@ -1,31 +1,12 @@
-# Project
+# Homepage
 
-# Purpose
+[Live Demo](https://strallia.github.io/homepage/)
 
-# Template Features
+## Purpose
 
-- npm & configs
-- Webpack & configs
-- ESLint
-- Prettier
-- Babel
+Practice making reponsive sites. The layouts of the homepage site created here works on desktop, tablet and mobile.
 
-# Customize Template
+## Code Features
 
-- run `npm install` to install all packages
-
-# template.html
-
-- change title text
-
-## package.json
-
-- "name" property
-
-## wepack.config.js
-
-- favicon path
-
-## .browserlistrc
-
-- configure which browsers babel should transpile for
+- Utilize media queries
+- Create natural responsiveness with flex, grid, min/max width/height
