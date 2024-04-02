@@ -1,16 +1,27 @@
 @font-face {
-  font-family: "Playfair";
-  src: url("./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf");
+  font-family: 'Playfair';
+  src: url('./assets/fonts/PlayfairDisplay-VariableFont_wght.ttf');
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("./assets/fonts/Roboto-Regular.ttf");
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* outline: 1px solid red; */
+}
+
+body > * {
+  outline: 1px solid red;
+}
+
+img {
+  width: 200px;
+}
+
+.icon {
+  width: 20px;
 }
