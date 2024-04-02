@@ -15,11 +15,15 @@
   font-family: 'Roboto';
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
-  padding: 20px;
+  padding: 1rem;
 
   display: grid;
-  row-gap: 50px;
+  row-gap: 3rem;
 }
 
 /* HEADER */
@@ -92,6 +96,34 @@ header {
 .card__icons-container {
   display: flex;
   gap: 10px;
+}
+
+/* FOOTER */
+footer {
+  background-color: cornflowerblue;
+  margin: 0 -1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contact-info {
+  color: white;
+  padding: 20px 1rem 0 1rem;
+
+  display: grid;
+  gap: 20px;
+}
+.contact-info__title {
+  text-align: center;
+}
+.contact-info__icons-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.contact-info__headshot {
+  min-width: 100%;
 }
 
 /* FONTS */
