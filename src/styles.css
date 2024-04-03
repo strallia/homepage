@@ -21,9 +21,11 @@ html {
 
 body {
   padding: 1rem;
+  max-width: 850px;
 
   display: grid;
   row-gap: 3rem;
+  margin: 0 auto 0;
 }
 
 /* HEADER */
@@ -66,7 +68,7 @@ header::before {
   gap: 15px;
   justify-content: center;
 }
-@media (min-width: 500px) {
+@media (500px <= width <=1000px) {
   .header {
     display: block;
     background-color: white;
@@ -84,7 +86,6 @@ header::before {
     height: 140px;
   }
   .header__image {
-    transform-origin: bottom right;
     margin-left: -50px;
     margin-top: -70px;
   }
@@ -104,6 +105,43 @@ header::before {
     justify-content: flex-end;
   }
 }
+@media (width > 1000px) {
+  .header {
+    margin-top: 3rem;
+    padding-right: 2rem;
+    background-color: white;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    height: 220px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: repeat(3, min-content);
+    align-items: center;
+    align-content: center;
+    gap: 0;
+  }
+  header::before {
+    transform: skewY(-7deg);
+  }
+  .header__image-container {
+    grid-row: 1/4;
+    margin-right: 2rem;
+  }
+  .header__image {
+    width: 250px;
+  }
+  .header__name {
+    left: 50%;
+    transform: translate(-50%);
+    min-width: max-content;
+    bottom: 5px;
+  }
+  .header__title {
+    align-self: flex-end;
+  }
+  .header__icons-container {
+    align-self: flex-start;
+    justify-self: end;
+  }
+}
 
 /* PROJECTS */
 .projects__title {
@@ -118,7 +156,7 @@ header::before {
 }
 .projects__cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
   gap: 40px;
 }
 .card {
