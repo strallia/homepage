@@ -49,7 +49,11 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "./src/assets/images/*", to: "./dist" },
+        { 
+          from: "assets/images/*",
+          context: "src/",
+        },
+        
       ],
     }),
   ],
