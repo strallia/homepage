@@ -21,11 +21,16 @@ html {
 
 body {
   padding: 1rem;
-  max-width: 850px;
+  max-width: 1000px;
 
   display: grid;
   row-gap: 3rem;
   margin: 0 auto 0;
+}
+@media (width >= 500px) {
+  body {
+    padding: 1rem 2rem;
+  }
 }
 
 /* HEADER */
@@ -156,7 +161,7 @@ header::before {
 }
 .projects__cards-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 40px;
 }
 .card {
@@ -183,6 +188,11 @@ header::before {
 .card__icons-container {
   display: flex;
   gap: 10px;
+}
+@media (width >= 500px) {
+  .projects__title {
+    text-align: left;
+  }
 }
 
 /* FOOTER */
