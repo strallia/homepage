@@ -60,7 +60,10 @@ header::before {
 .header__name {
   color: white;
   position: absolute;
-  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  min-width: max-content;
+  bottom: 5px;
 }
 .header__title {
   padding-top: 10px;
@@ -95,9 +98,10 @@ header::before {
     margin-top: -70px;
   }
   .header__name {
+    left: -50%;
     top: -40%;
     right: -110%;
-    min-width: max-content;
+    transform: translate(50%);
   }
   .header__title {
     text-align: center;
@@ -132,12 +136,6 @@ header::before {
   }
   .header__image {
     width: 250px;
-  }
-  .header__name {
-    left: 50%;
-    transform: translate(-50%);
-    min-width: max-content;
-    bottom: 5px;
   }
   .header__title {
     align-self: flex-end;
