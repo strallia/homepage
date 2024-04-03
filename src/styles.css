@@ -67,6 +67,7 @@ header::before {
   transform: translate(-50%);
   min-width: max-content;
   bottom: 5px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
 }
 .header__title {
   padding-top: 10px;
